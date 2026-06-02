@@ -75,4 +75,4 @@ editor: visual
 ---
 ```
 
-Building a bibliography by hand is painful. Reference managers like [Zotero](https://www.zotero.org) (free, open-source) export `references.bib` for you. A short setup guide: <https://ds4owd-002.github.io/website/guide/>
+Building a bibliography by hand is painful. Reference managers like [Zotero](https://www.zotero.org) (free, open-source) export `references.bib` for you.
