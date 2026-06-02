@@ -5,6 +5,9 @@ format: html
 editor: visual
 ---
 
+<!-- The block above (between the `---` lines) is the YAML header. -->
+<!-- Markdown heading: lines starting with `##` are Heading 2, like the one below. -->
+
 ## Data
 
 For this analysis we'll use the penguins dataset from the palmerpenguins R package.
@@ -23,12 +26,15 @@ library(gt)
 
 The figure below is a scatterplot of species of penguins.
 
+<!-- The chunk below is a code chunk: starts with ```{r}, ends with ``` -->
+
 ```{r}
 #| label: bill-dims-species
 #| warning: false
 
 ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, 
+       # EDIT TARGET (a): change `bill_length_mm` to `flipper_length_mm`
+       mapping = aes(x = bill_length_mm,
                      y = bill_depth_mm,
                      color = species,
                      shape = species)) +
@@ -46,6 +52,7 @@ The table below shows the first 10 penguins from the dataset.
 #| label: penguins-top10
 
 penguins |>
+  # EDIT TARGET (b): change `n = 10` to `n = 5`
   slice_head(n = 10) |>
   select(species, island, bill_length_mm, bill_depth_mm) |>
   gt()

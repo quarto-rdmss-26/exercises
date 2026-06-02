@@ -1,0 +1,78 @@
+---
+title: "Citations"
+author: ""
+bibliography: references.bib
+format: html
+editor: visual
+---
+
+## About this exercise
+
+You have a `references.bib` file in this project that already contains several entries. Your task is to add two citations to the text below, render the document, and observe how the reference list is generated automatically at the end.
+
+The two entries you will use are:
+
+- `tilley2021my` (Tilley & Kalina 2021, "My flight arrives at 5 am, can you pick me up?")
+- `kalina2023rich` (Kalina, Makwetu & Tilley 2023, "The rich will always be able to dispose of their waste")
+
+## Task 1: in-text citation
+
+Edit the sentence below so that `@tilley2021my` appears as an in-text reference, replacing the underscore.
+
+> In \_\_\_, the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.
+
+Hint: the syntax is `@tilley2021my` (no brackets) when the author's name should appear as part of the sentence, like "as @tilley2021my describe...".
+
+## Task 2: parenthetical citation
+
+Add `[@kalina2023rich]` (with square brackets) at the end of the sentence below, before the period.
+
+> Inequality underpins waste management systems, structuring who can or cannot access services \_\_\_.
+
+Hint: with square brackets, both author and year appear in parentheses, like "...services [@kalina2023rich]."
+
+## Render
+
+Render the document. **Where did the reference list appear?**
+
+## Stretch goal: citation style
+
+Add a `csl:` field to the YAML header to switch to APA formatting:
+
+``` yaml
+---
+bibliography: references.bib
+csl: apa.csl
+---
+```
+
+Re-render. Notice how the formatting of the references changes.
+
+## Stretch goal: a richer scholarly YAML
+
+For a real scholarly article, the YAML header carries much more metadata. Here is an example you can copy into a new document to see what is possible:
+
+``` yaml
+---
+title: "An example scholarly article"
+date: today
+author:
+  - name: First Last
+    orcid: 0000-0003-2196-5015
+    email: me@web.org
+    affiliation:
+      - name: ETH Zurich
+        url: https://ethz.ch/de.html
+abstract:
+  The abstract will be placed here. Breaks can be added by hitting return on the keyboard.
+license: "CC BY"
+citation:
+  container-title: My Blog
+  url: https://www.example.com
+bibliography: references.bib
+csl: apa.csl
+editor: visual
+---
+```
+
+Building a bibliography by hand is painful. Reference managers like [Zotero](https://www.zotero.org) (free, open-source) export `references.bib` for you. A short setup guide: <https://ds4owd-002.github.io/website/guide/>
