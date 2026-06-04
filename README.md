@@ -22,10 +22,6 @@ The `extras/` folder contains exercises that were taught in earlier versions of 
 
 - `extras/callout-boxes.qmd` - Quarto callout types and collapsible callouts
 
-## Slides variants (optional)
-
-- `hello-penguins-slides.qmd` and `hello-penguins-slides-solutions.qmd` are revealjs variants of the hello-penguins exercise, kept for those who want to author slides.
-
 ## Attribution
 
 Content was re-used from a workshop hosted by [Mine Çetinkaya-Rundel](https://mine-cr.com/) at the 2023 Symposium on Data Science and Statistics and stored at <https://github.com/mine-cetinkaya-rundel/quarto-sdss>. The original content is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
