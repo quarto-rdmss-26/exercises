@@ -23,15 +23,15 @@ We will work through Task 1 and Task 2 together as a live walkthrough. Follow al
 
 Edit the sentence below so that `@tilley2021my` appears as an in-text reference, replacing the underscore.
 
-> In \_\_\_, the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.
+In \_\_\_, the authors describe how visitors still expect a personal pick-up, despite the availability of taxi services.
 
-Hint: the syntax is `@tilley2021my` (no brackets) when the author's name should appear as part of the sentence, like "as @tilley2021my describe...".
+Hint: the syntax is `@tilley2021my` (no brackets) when the author's name should appear as part of the sentence.
 
 ### Task 2: parenthetical citation
 
 Add `[@kalina2023rich]` (with square brackets) at the end of the sentence below, before the period.
 
-> Inequality underpins waste management systems, structuring who can or cannot access services \_\_\_.
+Inequality underpins waste management systems, structuring who can or cannot access services \_\_\_.
 
 Hint: with square brackets, both author and year appear in parentheses, like "...services [@kalina2023rich]."
 
@@ -58,7 +58,7 @@ Re-render. Notice how the formatting of the references changes.
 
 ### Stretch goal 2: a richer scholarly YAML
 
-For a real scholarly article, the YAML header carries much more metadata. Here is an example you can copy into a new document to see what is possible:
+For a real scholarly article, the YAML header carries much more metadata. Here is an example you can copy into the YAML header of this document or a new document to see what is possible:
 
 ``` yaml
 ---
@@ -83,4 +83,4 @@ editor: visual
 ---
 ```
 
-Building a bibliography by hand is painful. Reference managers like [Zotero](https://www.zotero.org) (free, open-source) export `references.bib` for you.
+Building a bibliography by hand is painful. Reference managers like [Zotero](https://www.zotero.org) (free, open-source) export `references.bib` for you and you can keep them in sync with your exported collection.
