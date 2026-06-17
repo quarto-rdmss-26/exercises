@@ -1,16 +1,19 @@
 ---
 title: "Tables and figures"
-format: html
+format:
+  html:
+    toc: true
+    embed-resources: true
 editor: source
 ---
 
 ```{r}
-#| label: load-packages
 #| message: false
 
 library(tidyverse)
 library(ggthemes)
 library(palmerpenguins)
+library(gt)
 ```
 
 ## Task 1: Cross-reference an image
@@ -51,8 +54,6 @@ penguins |>
 In ...
 
 ```{r}
-#| warning: false
-
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, 
                      y = bill_depth_mm,
@@ -63,3 +64,13 @@ ggplot(data = penguins,
   labs(x = "Bill length (mm)", y = "Bill depth (mm)") +
   theme_minimal()
 ```
+
+## Task 4: Cross-reference an equation
+
+1.  Render the document and check how the equation below is numbered and cross-referenced. You do not need to change anything here, just render to see the output.
+
+A straight line is defined by @eq-line.
+
+$$
+y = mx + b
+$$ {#eq-line}

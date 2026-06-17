@@ -10,7 +10,6 @@ editor: visual
 For this analysis we'll use the penguins dataset from the palmerpenguins R package.
 
 ```{r}
-#| label: load-packages
 #| message: false
 
 library(tidyverse)
@@ -24,7 +23,6 @@ library(gt)
 The figure below is a scatterplot of species of penguins.
 
 ```{r}
-#| label: bill-dims-species
 #| warning: false
 
 ggplot(data = penguins,
@@ -43,8 +41,6 @@ ggplot(data = penguins,
 The table below shows the first 10 penguins from the dataset.
 
 ```{r}
-#| label: penguins-top10
-
 penguins |>
   slice_head(n = 10) |>
   select(species, island, bill_length_mm, bill_depth_mm) |>
