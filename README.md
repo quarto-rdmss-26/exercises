@@ -2,7 +2,7 @@
 
 Exercises for "Quarto - authoring and publishing tools for collaborative scientific writing".
 
-See https://quarto-rdmss-25.github.io/website/ for course website where exercises are used.
+See https://quarto-rdmss-26.github.io/website/ for course website where exercises are used.
 
 ## Active exercises (used in the live session)
 
